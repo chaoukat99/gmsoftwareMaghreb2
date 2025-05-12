@@ -1,0 +1,84 @@
+Exercice: 
+
+
+
+-Main Title(Titre Important)
+
+
+-Section 1 
+-paragraph
+
+-Section 2
+
+-sous-section1
+-paragraph 
+-sous-section2
+-paragraph 
+
+
+-Section 3
+
+- paragraph
+
+
+
+
+Exercice 2 : 
+
+
+
+NOM COMPLET :(titre important)
+paragraphe de profil (Profession)
+
+Ma Formation : (ordonnée)
+  1-
+  2-
+  3-
+
+Expérience : (non ordonnée)
+
+   -
+   -
+   -
+   -
+ Compétence: 
+    Linguistique:(non ordonnée)
+
+     -
+     -
+     -
+    Technique : (non ordonnée)
+
+     - 
+     -
+     -
+
+
+
+
+  -lien pour se naviguer a linkedin 
+  - pour allez vers la section Experience
+  - pour allez vers la section Formation
+  - pour allez vers la section Compétence
+
+  -Contact :(Titre )
+  -para(texte)
+  -Email : example@gmail.com
+  -Tel : +216893938989
+
+  lien pour Télécharger Mon Cv 
+
+
+   
+
+  
+
+
+
+
+
+
+
+
+
+

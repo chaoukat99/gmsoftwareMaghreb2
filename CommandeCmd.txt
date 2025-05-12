@@ -1,0 +1,10 @@
+D'ouvrir Cmd 
+
+
+Accéder A la racine c d e : cd /
+
+Créer un dossier : mkdir nom_du_dossier
+
+Accéder au dossier Crée : cd nom_du_dossier
+
+D'ouvrir le dossier sur Vs Code : code .
