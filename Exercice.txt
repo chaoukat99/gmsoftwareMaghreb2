@@ -79,6 +79,21 @@ Expérience : (non ordonnée)
 
 
 
+// Formulaires :
+
+
+1-Un formulaire de connexion :
+
+
+-  Username ou bien Email
+-  Mot de passe
+
+- Button (Se connecter )
+
+2-Questionnaire de 4 question :
+2 question a choix unique
+2 question a choix multiples
+
 
 
 
