@@ -1,0 +1,23 @@
+
+/* Colors : 
+
+   - color name 
+   - rgb(red , green ,blue)   min:0 max 255
+
+   - hexadecimal         #ff0000
+
+*/
+
+
+/* h1{
+    color:#2855fa;
+    background-color:grey;  
+} */
+
+
+body{
+    background-color: #f00;
+    color: rgb(255 255 255);
+}
+
+

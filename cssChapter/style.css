@@ -1,16 +1,135 @@
-Selecteur{
+/* Selecteur{
     property:value;
     property:value;
     property:value;
     property:value;
 
-}
+} */
+
+/*
+this is a comment 
+
+*/
 
 
 
-h1{
+/* 
+selection methods:
+- By tagname
+- By id    appel: #my_id
+- By class appel: .my_class
+- by attribute : [attribute="value"]
+
+- chainning
+
+
+*/
+
+/* h1{
     color:blue;
     background-color: red;
-    width: 300px;
+    width: 200px;
+} */
+
+
+
+#my_title{
+    color: blue;
 }
 
+
+
+#my_para{
+    color:red
+}
+
+
+
+/* #fp{
+    color: green;
+}
+#tp{
+    color: green;
+} */
+
+
+
+/* .custom{
+    color: green;
+}
+
+
+
+
+input[type="text"]{
+    background-color: red;
+}
+
+
+
+
+[href="https://www.youtube.com"]{
+    color: red;
+}
+
+
+
+section article h2{
+    color:red;
+}
+
+
+header nav ul li a{
+    color: orange;
+}
+
+
+
+section .my_article a{
+    color: chartreuse;
+}
+
+
+.cls{
+    color:red;
+}
+
+
+
+p:not(.unique){
+    color: red;
+} */
+
+
+
+
+
+
+
+
+/* 
+
+colors and backgrounds
+dimensions
+fonts
+borders
+margins(padding)
+display
+position
+
+
+Flexbox
+Media queries
+Animations(Bonus)
+
+
+Pseudo classes
+Pseudo elements
+
+
+Bootstrap (Css framework)
+
+
+
+
+*/
