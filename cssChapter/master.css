@@ -1,10 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* Colors : 
 
    - color name 
    - rgb(red , green ,blue)   min:0 max 255
 
-   - hexadecimal         #ff0000
+   - hexadecimal         #ff0000 min :0 max F
+  
 
 */
 
@@ -15,9 +18,95 @@
 } */
 
 
-body{
-    background-color: #f00;
-    color: rgb(255 255 255);
+/* body{
+    background-color: rgb(221, 41, 161);
+    color: rgb(24, 40, 224);
+} */
+
+/* body{
+    background-color: black;
+} */
+
+.cls{
+    /* width: 200px;
+    height: 200px;
+    background-color: red;
+    background-image: url(./bg.png); */
+    /* background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center; */
+    /* width: 200px;
+    height: 80px;
+    background-color: red;
+    background-image: linear-gradient(to bottom,red,orange,yellow,brown); */
+width: 250px;
+height: 250px;
+background-image: url("./profil.webp");
+
+}
+
+/* 
+.profile{
+    width: 250px;
+    height: 250px;
+    background-image: url(./profil.webp);
+   
+} */
+
+
+/* body{
+background-image: linear-gradient( 75.1deg,  rgba(34,126,34,1) 6%, rgba(99,226,17,1) 84.3% );
+
+} */
+
+
+
+
+
+
+
+/* Fonts 
+
+- size
+- weight
+-style
+- family
+-text-align
+- text-decoration
+- text-transoform
+
+*/
+
+
+
+
+/* i{
+    font-size: 60px;
+    color: green;
+} */
+
+.my_div{
+    font-size:30px ;
+   /* font-weight: bold;*/ /* 100 - 900*/
+   /* font-style: oblique; */
+
+  /* font-family: "Bebas Neue", sans-serif; */
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none ;
+  text-transform:capitalize ;  /*  uppercase lowercase  capitalize */
+
+}
+
+
+
+a{
+   
+   
+    background-color: red;
+    color: white;
+    text-decoration: none;
 }
 
 
