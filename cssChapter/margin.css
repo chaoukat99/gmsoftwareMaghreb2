@@ -1,0 +1,89 @@
+/* 
+
+Les Marges 
+
+- Top (haut)
+- Right (droite)
+- Bottom (bas)
+- Left (gauche)
+
+-Externe (Margin)
+-Interne (Padding)
+
+*/
+
+
+.cls,.cls2{
+
+    width: 300px;
+    height: 100px;
+   
+    /* margin-left:100px;
+    margin-top: 100px; */
+
+
+
+}
+
+
+.cls{
+     background-color: red;
+     /* margin-left: 200px;
+     margin-top: 100px; */
+ 
+}
+
+.cls2{
+    background-color: green;
+    margin-top: 10px;
+}
+
+
+
+
+a{
+
+    color: blue;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+
+
+span{
+    color: white;
+   width: 200px;
+   background-color: red;
+   height: 50px;
+   display: block;
+    /* margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom:100px ;
+    margin-right: 100px ; */
+    margin:100px auto ;
+
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+button{
+    padding: 10px;
+}
+
+
+
+
+p{
+    /* word-spacing: 20px; */
+    /* letter-spacing: 10px; */
+}
+
+
+textarea{
+
+    margin-left: 10px;
+}

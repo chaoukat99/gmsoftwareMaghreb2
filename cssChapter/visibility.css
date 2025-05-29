@@ -1,0 +1,31 @@
+.cls{
+
+    width: 200px;
+    height: 70px;
+    background-color: red;
+    /* visibility: hidden; */
+    display:none ;
+    /* opacity: ; */
+}
+
+
+body{
+
+    cursor: url(./among_us.png),auto;
+}
+
+
+
+img{
+    /* filter: grayscale(100%); */
+
+    filter:hue-rotate(190deg);
+   
+}
+
+
+/* 
+img:hover{
+   
+} */
+

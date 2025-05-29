@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Css</title>
+
+    <style>
+
+.cls{
+
+width: 100px;
+height: 100px;
+border: solid 2px red;
+border-radius: 50%;
+
+
+animation: omar 1s infinite;
+}
+
+
+
+@keyframes omar {
+    
+    0%{
+        background-color: red;
+       scale: 1;
+    }
+    50%{
+        background-color: green;
+   scale: 1.09;
+    }
+    100%{
+
+        background-color:blue ;
+        scale: 1;
+    }
+
+}
+
+    </style>
+
+
+
+    <!--Cdn-->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <!--
+    <h1 class="animate__animated animate__hinge">An animated element</h1>
+
+    -->
+
+    <!--
+    <img src="./profil.webp" class="animate__animated animate__hinge" alt="">
+
+--> 
+
+
+    <div class="cls"></div>
+</body>
+</html>
+
+
+
+<!--
+
+Position
+Flex Box 
+pseudo classes & elements 
+media queries
+
+bootstrap 
+-->
