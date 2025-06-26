@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+Exercice 2 : calculer la moyenne d'un etudiant 
+
+
+3 notes (Prompts Note1 Note2 Note3)
+
+afficher le message la moyenne est : 12.4
+
+
+
+Exercice 3 : Verifier si le nombre pair ou bien impair 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🧾 Exercice : Système de facturation simple
+📌 Objectif : Créer un petit programme JS qui permet à l'utilisateur d'ajouter plusieurs produits (nom, quantité, prix unitaire), calcule les totaux, et affiche une facture finale.
+
+🔹 Énoncé :
+L'utilisateur ajoute des produits un par un.
+
+Pour chaque produit, on demande :
+
+nom du produit
+
+prix unitaire
+
+quantité
+
+Le programme calcule le sous-total pour chaque produit.
+
+Il propose de continuer à ajouter ou non (avec confirm()).
+
+À la fin, il affiche la facture complète avec le total général.
+
