@@ -16,6 +16,11 @@ afficher le message la moyenne est : 12.4
 
 Exercice 3 : Verifier si le nombre pair ou bien impair 
 
+User doit insérer un nombre 
+le programme doit afficher le message suivant Nombre Pair / Impair
+
+
+
 
 
 
@@ -38,19 +43,27 @@ Exercice 3 : Verifier si le nombre pair ou bien impair
 📌 Objectif : Créer un petit programme JS qui permet à l'utilisateur d'ajouter plusieurs produits (nom, quantité, prix unitaire), calcule les totaux, et affiche une facture finale.
 
 🔹 Énoncé :
+
+
+
+L'utilisateur doit Insérer combien de produits a enregistrer  // 3
+
+
 L'utilisateur ajoute des produits un par un.
 
-Pour chaque produit, on demande :
+-prix   // 300   100   150
+-Qantité // 2     1    3
 
-nom du produit
 
-prix unitaire
 
-quantité
 
-Le programme calcule le sous-total pour chaque produit.
 
-Il propose de continuer à ajouter ou non (avec confirm()).
 
-À la fin, il affiche la facture complète avec le total général.
+
+D'afficher le total A payer 
+
+
+
+
+
 
