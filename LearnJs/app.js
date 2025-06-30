@@ -910,26 +910,26 @@ let client_blackList=5;
 
 
 
-let numberOFMarks=prompt("Veuillez Saisir combien de note vous voulez enregistrer");
+// let numberOFMarks=prompt("Veuillez Saisir combien de note vous voulez enregistrer");
 
 
-let somme=0;
+// let somme=0;
 
-let promptx ;
-
-
-for(let i=0;i< +numberOFMarks;i++){
-
-  promptx=prompt("Veuiillez Insere la note "+(i+1));
+// let promptx ;
 
 
-  somme=somme+(+promptx)
+// for(let i=0;i< +numberOFMarks;i++){
 
-}
+//   promptx=prompt("Veuiillez Insere la note "+(i+1));
+
+
+//   somme=somme+(+promptx)
+
+// }
 
 
 // console.log("La moyenne est "+((note1+note2+note3)/3));
-console.log("La moyenne est "+ (somme/numberOFMarks));
+// console.log("La moyenne est "+ (somme/numberOFMarks));
 
 
 
@@ -938,3 +938,202 @@ console.log("La moyenne est "+ (somme/numberOFMarks));
 // Afficher sur le console le message : La moyenne est : N.NN
 
 
+
+
+
+// let chaine="hello world";
+
+
+// console.log(chaine.includes("hello"))
+// let test=false;
+
+
+
+// for(let i of chaine.split("")){
+//   if(i=="z"){
+//     test=true;
+//     break;
+//   }
+// }
+
+
+// if(test){
+//   console.log("On a trouvé la lettre h")
+// }else{
+//     console.log("On n'a pas trouvé la lettre z")
+
+// }
+
+
+
+
+
+// String Method 
+
+
+let str=" SAMIR ";
+         
+
+
+// La taille / la longueur
+// console.log(str.length)
+
+// let first=str[0];
+// let last=str[15];
+
+// console.log(str[5]);
+
+
+// toupperCase()
+
+// tolowerCase()
+
+// console.log(str.toUpperCase());
+
+// console.log(str.toLowerCase())
+
+
+// console.log(str.repeat(100))
+
+// let finaltext=""
+// for(let i=0;i<100;i++){
+//   finaltext=finaltext+str;
+// }
+
+
+// console.log(finaltext)
+
+
+
+let sayHello="Hello";
+
+// console.log(sayHello.replace("l","f"));
+
+// Trim
+
+
+// let password="      omar123";
+
+// // console.log(password)
+// console.log(password.trim())
+
+
+// let email="hello Mr Nassim , un message ";
+
+
+// console.log(email.includes("nassim"))
+
+
+
+ str="hello world this is gomycode";
+// let start=str.indexOf("g");
+// let end=str.indexOf("r",start);
+// console.log(end);
+//  console.log(str.slice(start,end+1))
+
+//  console.log(str.slice(19,28))
+
+// let position=str.split("").findIndex((el)=>el=="W");
+// console.log(position)
+
+// console.log(str.indexOf("h"))
+
+// console.log(str[str.length-1])
+// console.log(str[0]);
+
+
+
+// Exercice :
+
+
+
+/*
+
+demander a l'utilisateur de renseigner les données suivantes: 
+
+-Nom D'utilisateur 
+-Age
+-Email
+-Numero de Telephone 
+-Mot de Passe 
+
+
+
+Aprés l'insertion des données il faut valider les champs suivants:
+
+
+-Nom D'utilisateur doit etre  obligatoire
+
+-Age doit etre supérieur ou égale 21 
+
+-Email doit etre valide (contient @)
+
+-Numero doit commencer avec (212 ou 213 ou 216) 
+
+-Mot de passe doit etre entre 6 et 10 caractére 
+
+
+si les champs sont valides on va afficher les données insérer 
+
+sinon  on va afficher un message d'erreur
+
+
+
+
+
+
+
+*/
+
+
+
+
+// SRP
+
+
+const fullname=prompt("Fill the fullname ");
+const age=prompt("fill age ");
+const email=prompt("fill the emai");
+const mobile =prompt("Fill the mobile phone ");
+const password=prompt("fill password");
+
+
+
+// true & false
+
+
+
+
+const fullnameValidation=fullname.length>0 ;
+const ageValidation=age>=21;
+const emailValidation=email.includes("@");
+const mobileValidation=mobile.startsWith("212") || mobile.startsWith("213") || mobile.startsWith("216");
+const passwordValidation=password.length>=6 && password.length<=10;
+// let fullvalidation;
+
+// if(fullname.length>0){
+//   fullvalidation=true;
+// }else{
+//   fullvalidation=false;
+// }
+
+
+
+if(fullnameValidation && ageValidation && emailValidation && mobileValidation && passwordValidation){
+  alert("Nom:"+fullname+"\nAge:"+age+"\nEmail:"+email+"\nMobile:"+mobile+"\nPassword:"+password)
+}else{
+  alert("Something went wrong ");
+}
+
+
+
+// const str2="212779988";
+
+
+// startsWidth
+
+// EndsWidth
+
+
+// console.log(str2.startsWith("215"))
+// console.log(str2.endsWith("88"))
