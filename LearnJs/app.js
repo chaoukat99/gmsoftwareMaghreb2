@@ -1091,11 +1091,11 @@ sinon  on va afficher un message d'erreur
 // SRP
 
 
-const fullname=prompt("Fill the fullname ");
-const age=prompt("fill age ");
-const email=prompt("fill the emai");
-const mobile =prompt("Fill the mobile phone ");
-const password=prompt("fill password");
+// const fullname=prompt("Fill the fullname ");
+// const age=prompt("fill age ");
+// const email=prompt("fill the emai");
+// const mobile =prompt("Fill the mobile phone ");
+// const password=prompt("fill password");
 
 
 
@@ -1104,11 +1104,11 @@ const password=prompt("fill password");
 
 
 
-const fullnameValidation=fullname.length>0 ;
-const ageValidation=age>=21;
-const emailValidation=email.includes("@");
-const mobileValidation=mobile.startsWith("212") || mobile.startsWith("213") || mobile.startsWith("216");
-const passwordValidation=password.length>=6 && password.length<=10;
+// const fullnameValidation=fullname.length>0 ;
+// const ageValidation=age>=21;
+// const emailValidation=email.includes("@");
+// const mobileValidation=mobile.startsWith("212") || mobile.startsWith("213") || mobile.startsWith("216");
+// const passwordValidation=password.length>=6 && password.length<=10;
 // let fullvalidation;
 
 // if(fullname.length>0){
@@ -1119,11 +1119,11 @@ const passwordValidation=password.length>=6 && password.length<=10;
 
 
 
-if(fullnameValidation && ageValidation && emailValidation && mobileValidation && passwordValidation){
-  alert("Nom:"+fullname+"\nAge:"+age+"\nEmail:"+email+"\nMobile:"+mobile+"\nPassword:"+password)
-}else{
-  alert("Something went wrong ");
-}
+// if(fullnameValidation && ageValidation && emailValidation && mobileValidation && passwordValidation){
+//   alert("Nom:"+fullname+"\nAge:"+age+"\nEmail:"+email+"\nMobile:"+mobile+"\nPassword:"+password)
+// }else{
+//   alert("Something went wrong ");
+// }
 
 
 
@@ -1137,3 +1137,438 @@ if(fullnameValidation && ageValidation && emailValidation && mobileValidation &&
 
 // console.log(str2.startsWith("215"))
 // console.log(str2.endsWith("88"))
+
+
+
+// const Email="salim@yahoo.com";
+
+
+
+// let test=Email.endsWith("gmail.com");
+
+
+
+// console.log(test)
+
+
+
+
+
+// Programme qui compte le nombre des emails de google et les emails de yahoo 
+// a la fin de ce programme il faut afficher le message suivant : 
+
+// Compte Google : 3
+// Compte Yahoo : 10 
+
+
+
+//   let continuerAInserer;
+//   let promptEmail;
+
+//   let GmailCounter=0;
+//   let YahooCounter=0;
+
+// do{
+//   continuerAInserer=confirm("Vous voulez ajouter un autre Email ");
+//   if(continuerAInserer){
+
+//     promptEmail=prompt("Veuillez Saisir Email : ") 
+  
+//      if(promptEmail.endsWith("gmail.com")){
+//          GmailCounter=GmailCounter+1;
+//      }else if(promptEmail.endsWith("yahoo.com")){
+//          YahooCounter=YahooCounter+1;
+//      }else{
+//       continue;
+//      }
+//   }else{
+//     break;
+//   }
+// }
+// while(continuerAInserer)
+
+
+
+
+
+// console.log("Compte Gmail : "+GmailCounter+"\nCompte Yahoo :"+YahooCounter)  ;
+
+
+
+// for 
+
+
+// while
+
+
+
+// // do {
+
+
+// }while()
+
+
+// Numbers 
+
+
+
+// Math 
+
+
+// console.log(Math.PI)
+
+
+
+const Note = 14.05; // 0-5 on laisse la valeur sans virgule 5-9 On incremente L a valeur +1
+
+// Round
+
+
+// console.log(Math.round(Note))
+
+
+// floor 
+
+
+// console.log(Math.floor(Note))
+
+// ceil
+// console.log(Math.ceil(Note))
+
+
+
+// Max 
+
+// console.log(Math.max(12,5,100,-1,2))
+
+
+// Min
+
+// console.log(Math.min(12,5,100,-1,2))
+
+
+
+// 0 100
+
+
+// let randomNumber=Math.floor(Math.random()*101)
+
+// console.log(randomNumber);
+
+
+
+
+// let characters="azerttyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN1234567890à@!;,&é'(-è_çà)=";
+
+
+
+
+// const passwordLength=prompt("La taille du mot de passe : ");
+
+
+// let password="";
+
+
+// let randomNumber;
+
+// for(let i=0;i<passwordLength;i++){
+
+// randomNumber=Math.floor(Math.random()*characters.length)
+
+// password=password+characters[randomNumber]
+
+
+
+// }
+
+
+
+// console.log("Votre Mot de Passe est : "+password);
+
+
+
+
+// console.log(characters[randomNumber])
+
+// Ecrire un programme qui va demander a l'utilisateur de saisir la taille du mot de passe 
+// et le programme il va genere un mot de passe avec la taille demandé sur et l'afficher sur le console 
+
+
+
+
+
+// String "samir" 'samir'
+
+// Number 10 2005 12.7
+
+
+// Boolean true false 
+
+
+// Null 
+
+
+
+// let email1="email1@gmail.com";
+// let email2="email2@gmail.com";
+// let email3="email3@gmail.com";
+// let email4="email4@gmail.com";
+// let email5="email5@gmail.com";
+
+
+// Traitement sur les emails
+
+
+// type de donnée Tableau
+
+let clientEmails=["email1@gmail.com","email2@gmail.com","email3@gmail.com","email4@gmail.com","email5@gmail.com","email6@gmail.com"];
+
+// let studentMarks=[12,15,6,18,20];
+
+
+
+
+
+
+
+// let TetsTableau=[12,"Hello",13.2,false,null,12>90];
+
+// CRUD(CREATE READ UPDATE DELETE)
+
+
+
+// Récuperer la taille du tableau 
+// console.log(clientEmails.length)
+
+
+
+// READ
+
+// console.log(clientEmails);
+
+
+// Read single Item 
+
+// First One 
+// console.log(clientEmails[0]);
+// Last One
+
+
+// console.log(clientEmails[clientEmails.length-1])
+
+// console.log(clientEmails[0])
+// console.log(clientEmails[1])
+// console.log(clientEmails[2])
+
+
+
+
+// for(let i=0;i<clientEmails.length;i++){
+//     console.log(clientEmails[i]);
+// }
+
+
+// 2éme methode de la boucle for avec les tableaux
+
+
+// for(let i of clientEmails ){
+//     console.log("Email : "+i);
+// }
+
+
+
+let Names=["Salim","Sara","Sabah","Salwa"];
+
+// for 
+
+
+// for(let i=0;i<Names.length;i++){
+//       console.log(Names[i])
+// }
+
+
+// 2end method
+
+
+// for(let i of Names ){
+//    console.log(i) 
+// }
+
+
+
+
+// let users=["omar","john","karim","sara","salim","hamid","brahim","malak","hassan","khalid","yassine","hamid","malak","aymen","soufiane","hamid","youssef","karim"];
+
+
+
+// Ecrire un programme qui demande a l'utilisateur de saisir un prénom
+
+// Le programme doit chercher sur le tableau le prenom saisi et afficher combien de fois il a trouvé ce prénom
+// s' il ne trouve pas le prénom il faut afficher une alerte qui contient un message d'erreur  Utilisateur Introuvable 
+
+
+// let UserCounter=0;
+
+// let prénomPrompt=prompt("Veuillez Saisir Un prénom ?");
+
+
+
+// for(let i of users){
+
+//     if(i.toUpperCase()==prénomPrompt || i.toLowerCase()==prénomPrompt){
+//         // UserCounter=UserCounter+1
+//         // UserCounter+=1;
+//         UserCounter++;
+//     }
+// }
+
+// if(UserCounter>0){
+//     alert("User with name "+prénomPrompt+" is repeated "+UserCounter+" Times")
+// }else{
+//     alert("User Unfound");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(cities);
+
+
+
+
+// Modifier La valeur de Rabat par Fés
+
+// cities[1]="Fés"
+
+// cities[0]="El JADIDA"
+
+
+// let cities=["Casablanca","Rabat","Marrakech"];
+
+// // Insertion 
+// cities[3]="Agadir";
+// cities[4]="Méknes"
+
+
+// console.log(cities);
+
+
+
+// Ecrire un programme qui demande a l'utilisateur de saisir combien de ville vous voulez Inserer 
+// Aprés utilisateur va commerncer a insérer les villes sur le tableux en utilisant des prompts 
+// A la fin du programme il faut afficher le message suivant les N villes sont :
+// -Agadir 
+// -Paris
+// -Toulouse
+// ...
+
+
+
+
+let villes=[]; // villes.length=0
+
+
+
+let confirm2;
+
+
+do{
+    confirm2=confirm("Vous voulez Faire qlq chose? ");
+     if(confirm2){
+  let promptOption=prompt("Menu:\n1-chercher une ville\n2-Inserer des villes\n3-afficher de ville disponibles")
+
+
+switch(promptOption){
+    case "1":{
+     let searchPrompt=prompt("Saisir la ville a chercher ");
+
+let conterSearch=0;
+
+
+for(i of villes){
+    if(i==searchPrompt){
+        conterSearch++;
+        break;
+    }
+}
+
+if(conterSearch>0){
+  alert("La ville "+searchPrompt+" Existe sur le tableau ");
+}else{
+    alert("Ville non trouvé");
+}
+
+    }
+    break;
+
+
+   case "2" :{
+         
+
+
+const  nbInsertion=+ prompt("Tu veux Insérer combien de ville ?");
+
+
+let ville;
+
+
+
+for(let i=0;i<nbInsertion;i++){
+    // Traitement d'insertion
+
+    ville=prompt("Insérer Le Nom de la ville :  ");
+
+    villes[i]=ville;
+}
+   }
+   break;
+
+   case "3":{
+   console.log("Les   Villes sont : ")
+
+for(let i of villes){
+    console.log("- "+i);
+}
+
+   }
+   break;
+
+}
+     }else{
+        break;
+     }
+
+  
+
+}while(confirm2)
+
+
+
+
+
+
+
+
+// prompt pour inserer une ville
+// le programme doit chercher si la ville existe s'in existe il va l'afficher sinon il va afficher un message 
+
+
+
+// Chercher Une ville 
+
+
+
+
+
+
+
+
+
