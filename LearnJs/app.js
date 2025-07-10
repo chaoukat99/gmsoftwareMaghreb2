@@ -2020,7 +2020,8 @@ let products=[
         name:"Macbook Pro 2025 M4",
         stock:12,
         price:3000,
-        available:false
+        available:false,
+      
     },
     {
         id:Math.floor(Math.random()*999999),
@@ -2075,15 +2076,15 @@ available :disponible
 
 
 
-for(let i of products){
-    console.log(`Id:${i.id}\nProduct Name:${i.name}\nPrice:${i.price} $\nStock:${i.stock}\navailable:${i.available?"disponible":"Indisponible"}`);
-    console.log("-".repeat(50))
-}
+// for(let i of products){
+//     console.log(`Id:${i.id}\nProduct Name:${i.name}\nPrice:${i.price} $\nStock:${i.stock}\navailable:${i.available?"disponible":"Indisponible"}`);
+//     console.log("-".repeat(50))
+// }
 
-// filtrage
+// // filtrage
 
 
-// programme qui retourne un nouveaux tableau qui contient juste les produits qui ont le stock supérieur a 1 et le prix entre 500 $ et 4500 $
+// // programme qui retourne un nouveaux tableau qui contient juste les produits qui ont le stock supérieur a 1 et le prix entre 500 $ et 4500 $
 
 let filteredProducts=[];
 
@@ -2095,3 +2096,195 @@ for(let i of products){
 }
 
 console.log(filteredProducts);
+
+
+
+
+
+// let voiture={
+//     marque:"Mercedes",
+//     couleur:"blanche",
+//     kilométrage:300,
+//     Dmain:false
+// }
+
+let etudiant={
+    codeEtudiant:"K12221OI",
+    nom:"Salihi",
+    prenom:"Adil",
+    dateDeNaissance:"1997-06-20",
+    formation:"Software Developer",
+    notes:[12,20,15,9,13],
+    status:false
+}
+
+// console.log(etudiant.formation)
+
+
+
+// // Ajouter 
+// etudiant.adresse="Casablanca Bourgone "
+
+
+
+// // Modifier
+
+
+// etudiant.status=true
+
+
+// // Supprimer 
+
+
+// delete etudiant.notes;
+
+
+
+
+
+// console.log(etudiant)
+
+
+
+
+// let etudians=[];
+// Insertion
+
+// 1er programme va demander a l'utilisateur de saisir le nombre des etudiants a enregistrer 
+// et le programme  doit enregistrer les etudiant saisi sur le tableau etudians 
+
+
+// etudiant est carctérisé par id , nom , prenom une liste de 3 notes et status(false,true)
+
+
+// a la fin de ce programme il faut afficher le tableaux des etudiants 
+
+
+
+// let  etudiant_list =[]
+// nbre_etd = prompt("saisir le nombre d'étudiants")
+// for (i=0; i<nbre_etd;i++){
+//     etudiant = {id:0, nom:"", prenom:"",note:[], pass: false}
+// etudiant.id=i+1
+// etudiant.nom= prompt("inserer nom")
+// etudiant.prenom= prompt("inserer prenom")
+// etudiant.arb = prompt("inserer note arabe")
+// etudiant.fr = prompt("inserer note francais")
+// etudiant.eng = prompt("inserer note anglais")
+
+// etudiant_list.push(etudiant)
+// }
+// // console .log(etudiant)
+// console.log(etudiant_list)
+
+/*
+
+id:Number
+nom:string
+prenom :string
+note : Tableau 
+*/
+
+
+// let listofStudents=[];
+
+
+// let numberOfStudent= +prompt("combien d'etudiants vous voulez Enregistrer ? ")
+
+
+
+// let obj;
+
+
+// for(let i=0;i<numberOfStudent;i++){
+
+//  obj={
+//        id:Math.floor(Math.random()*9999999),
+//        nom:prompt(`Veullez saisir Le nom de L'etudiant numero ${i+1} `),
+//        prenom:prompt(`Veullez saisir Le prénom de L'etudiant numero ${i+1} `),
+//        note:[+prompt("note 1"),+prompt("note 2"),+prompt("note 3")]
+//    }
+
+//    listofStudents.push(obj)
+
+// }
+
+
+
+// console.log(listofStudents);
+
+
+
+
+let listofStudents=[
+    {
+        id:1,
+        nom:"salimi",
+        prenom:"wael",
+        note:[12,13,15,7,9]
+    },
+    {
+        id:2,
+        nom:"berhoumi",
+        prenom:"sara",
+        note:[15,20,17,13]
+    },
+    {
+        id:3,
+        nom:"khalidi",
+        prenom:"hamza",
+        note:[5,5,10,3]
+    },
+]
+
+
+
+// Il faut créer un programme qui va demander a l'utilisateur de saisir un id (Number )
+// et le programme doit chercher etudiant par id donné et calculer la moyenne des notes
+// si la moyenne est supérieur ou egal a 10  "validation" sinon "rattrapage" 
+
+
+
+
+// user Input
+
+let id_user=+prompt("Veuillez saisir un identifiant : ");
+
+let etudiantt={}
+let found=false;
+
+for(let i of listofStudents){
+    if(i.id==id_user){
+      etudiantt=i
+      found=true;
+    }
+}
+
+
+if(found){
+    // traitement pour calculer la moyenne 
+    //  moyenne =somme/4
+
+    let somme=0;
+
+    for(let i of etudiantt.note){
+        somme=somme+i;
+    }
+
+    let moyenne=somme/etudiantt.note.length
+
+    if(moyenne>=10){
+        alert("Validation moyenne : "+moyenne)
+    }else{
+        alert("elimination moyenne :"+moyenne)
+    }
+
+}else{
+    alert("Unfound Student ")
+}
+
+
+
+
+
+
