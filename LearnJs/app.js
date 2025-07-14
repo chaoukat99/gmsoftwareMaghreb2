@@ -2095,7 +2095,7 @@ for(let i of products){
     }
 }
 
-console.log(filteredProducts);
+// console.log(filteredProducts);
 
 
 
@@ -2216,75 +2216,576 @@ note : Tableau
 
 
 
-let listofStudents=[
-    {
-        id:1,
-        nom:"salimi",
-        prenom:"wael",
-        note:[12,13,15,7,9]
-    },
-    {
-        id:2,
-        nom:"berhoumi",
-        prenom:"sara",
-        note:[15,20,17,13]
-    },
-    {
-        id:3,
-        nom:"khalidi",
-        prenom:"hamza",
-        note:[5,5,10,3]
-    },
-]
+// let listofStudents=[
+//     {
+//         id:1,
+//         nom:"salimi",
+//         prenom:"wael",
+//         note:[12,13,15,7,9]
+//     },
+//     {
+//         id:2,
+//         nom:"berhoumi",
+//         prenom:"sara",
+//         note:[15,20,17,13]
+//     },
+//     {
+//         id:3,
+//         nom:"khalidi",
+//         prenom:"hamza",
+//         note:[5,5,10,3]
+//     },
+// ]
 
 
 
-// Il faut créer un programme qui va demander a l'utilisateur de saisir un id (Number )
-// et le programme doit chercher etudiant par id donné et calculer la moyenne des notes
-// si la moyenne est supérieur ou egal a 10  "validation" sinon "rattrapage" 
+// // Il faut créer un programme qui va demander a l'utilisateur de saisir un id (Number )
+// // et le programme doit chercher etudiant par id donné et calculer la moyenne des notes
+// // si la moyenne est supérieur ou egal a 10  "validation" sinon "rattrapage" 
 
 
 
 
-// user Input
+// // user Input
 
-let id_user=+prompt("Veuillez saisir un identifiant : ");
+// let id_user=+prompt("Veuillez saisir un identifiant : ");
 
-let etudiantt={}
-let found=false;
+// let etudiantt={}
+// let found=false;
 
-for(let i of listofStudents){
-    if(i.id==id_user){
-      etudiantt=i
-      found=true;
+// for(let i of listofStudents){
+//     if(i.id==id_user){
+//       etudiantt=i
+//       found=true;
+//     }
+// }
+
+
+// if(found){
+//     // traitement pour calculer la moyenne 
+//     //  moyenne =somme/4
+
+//     let somme=0;
+
+//     for(let i of etudiantt.note){
+//         somme=somme+i;
+//     }
+
+//     let moyenne=somme/etudiantt.note.length
+
+//     if(moyenne>=10){
+//         alert("Validation moyenne : "+moyenne)
+//     }else{
+//         alert("elimination moyenne :"+moyenne)
+//     }
+
+// }else{
+//     alert("Unfound Student ")
+// }
+
+
+
+
+
+// Fonctions 
+
+
+
+// function Addition(){
+//     // traitement
+// }
+
+// addition 
+
+
+
+
+
+// 1- Déclarer et Implémenter 
+
+// function sayHello(){
+//     // Implémenter
+//     console.log("hello world")
+// }
+
+
+
+
+// 2- appeller  la fonction 
+
+
+
+// sayHello()    // j'execute la fonction 
+
+
+
+
+// Traitement
+
+
+
+// Java
+
+// string GetName(){
+//     return "Karim";
+// }
+
+
+// procédure
+
+
+// void SendEmail(){
+//     // traitement sans retourner des valeurs
+// }
+
+
+
+
+
+
+
+
+
+// sayHello()
+
+
+
+
+
+
+
+
+
+
+
+
+
+// sayHello()
+
+// Declaration
+
+// function sayHello(){
+//     return ["user1","user2","user3"]
+  
+// }
+
+
+
+
+// let my_variable=sayHello()[0]
+// // let my_variable="hello world"
+
+
+// console.log(my_variable);
+
+// call function
+
+
+// function Addition(){
+//     console.log(10+20);
+// }
+
+
+
+
+// Addition();
+
+
+
+// function Inscription(){
+//     let Users=[];
+//     let username=prompt("Veuillez Saisir le nom d'utilisateur : ")
+//     let password=prompt("Veuillez saisir le mot de passe :")
+
+
+//     let obj={
+//         user:username,
+//         pass:password
+//     }
+
+//     Users.push(obj);
+
+
+//     return Users;
+   
+
+// }
+
+
+
+
+
+// console.log(Inscription())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(Inscription())
+
+
+
+
+
+
+
+
+// function SayHi(user){
+//     console.log("Hello "+user);
+// }
+
+
+
+
+// function SendEmail(destinataire){
+
+//     console.log("Email envoyé a "+destinataire)
+// }
+
+
+
+
+// SendEmail("ayoub@gmail.com");
+
+
+
+// SendEmail("omar@gmail.com");
+
+
+
+
+
+
+
+// SayHi("Salim"); // console.log("Hello Karim");
+
+// SayHi("Taha");
+
+
+
+// Add(10,3)
+
+
+// function Add(a,b){
+//     alert(`l'addition de ${a}+${b} = ${a+b}`)
+// }
+
+
+
+// function Soustraction(a,b){
+//     alert(`La soustraction de ${a}-${b} = ${a-b}`)
+// }
+// function Multiplication(a,b){
+//     alert(`La Multiplication de ${a}x${b} = ${a*b}`)
+// }
+// function Dviison (a,b){
+//     alert(`La divison   de ${a}/${b} est  ${b!=0?a/b:"Impossible"} `)
+// }
+
+
+
+// users Inputs 
+
+// let number1=+prompt("Veuillez Saisir La valeur n1")
+// let number2=+prompt("Veuillez Saisir La valeur n2")
+
+// let operateur=prompt("Veuillez L'operateur : + | x | - | / ")
+
+
+
+// switch(operateur){
+//     case "+":{
+//         Add(number1,number2)
+//     }break;
+//     case "-":{
+//         Soustraction(number1,number2)
+//     }break;
+//     case "x":{
+//         Multiplication(number1,number2)
+//     }break;
+//     case "/":{
+//         Dviison(number1,number2)
+//     }break;
+//     default:{
+//         console.log("Opérateur Invalide ")
+//     }
+// }
+
+
+
+
+
+
+// Add(1,3);
+
+
+
+// Créer un programme qui va demander a l'utilisateur de saisir 
+// 2 nombres et l'opération et le programme doit retourné le résultas sous la forme :
+// l'addition de 1+3 = 4
+
+
+
+
+
+
+// function SayHitoUsers(users){
+//     for(let i of users){
+//         console.log(" Hello "+i)
+//     }
+// }
+
+
+
+// SayHitoUsers(["Salim","Karim","Hakim"])
+
+
+
+
+
+// function SayHi(user="User"){
+//     console.log(`Hi ${user}`)
+// }
+
+
+
+// SayHi();
+
+
+
+// Créer un petit programme JavaScript qui gère une liste de livres, et permet :
+
+// d’ajouter un livre, 
+
+// d’afficher les livres disponibles,
+
+// de chercher un livre par auteur,
+
+// d’indiquer si un livre est disponible ou non.
+
+// 📄 Énoncé :
+// Crée une variable bibliotheque qui est un tableau contenant des objets, chaque objet représente un livre avec les propriétés suivantes :
+
+// titre (string)
+
+// auteur (string)
+
+// disponible (booléen)
+
+// Crée une fonction nommée afficherLivres() qui affiche dans la console tous les livres de la bibliothèque (titre + auteur + disponibilité).
+
+
+
+
+// 1- Créer Un tableaux des livres (biblio) 
+
+
+
+let bibliotheque = [
+  {
+    titre: "Les Misérables",
+    auteur: "Victor Hugo",
+    disponible: true
+  },
+  {
+    titre: "Le Petit Prince",
+    auteur: "Antoine de Saint-Exupéry",
+    disponible: false
+  },
+  {
+    titre: "L'Étranger",
+    auteur: "Albert Camus",
+    disponible: true
+  },
+  {
+    titre: "Madame Bovary",
+    auteur: "Gustave Flaubert",
+    disponible: false
+  },
+  {
+    titre: "Germinal",
+    auteur: "Émile Zola",
+    disponible: true
+  },{
+    titre: "Notre Dame de paris",
+    auteur: "Victor Hugo",
+    disponible: false
+  }
+];
+
+
+
+
+
+// 1 - Ajouter un livre 
+
+
+function AddNewBook(titreL,auteurL){
+
+
+    // Créer un objet 
+    let livre={
+        titre:titreL,
+        auteur:auteurL,
+        disponible:true
     }
+
+
+    // Ajouter Le livre au tableau 
+    bibliotheque.push(livre)
+
+    console.log(bibliotheque);
+    return "Ajout d'un nouveau livre Nommé: "+titreL
 }
 
 
-if(found){
-    // traitement pour calculer la moyenne 
-    //  moyenne =somme/4
 
-    let somme=0;
 
-    for(let i of etudiantt.note){
-        somme=somme+i;
+// Afficher Tous les livres disponible 
+
+
+function DisplayDisponibleBooks(){
+
+    let livre_disponible=[];
+
+
+    // Parcourir bibliotéque
+
+    for(let i of bibliotheque){
+        if(i.disponible){
+            livre_disponible.push(i);
+        }
     }
 
-    let moyenne=somme/etudiantt.note.length
+     return livre_disponible;
 
-    if(moyenne>=10){
-        alert("Validation moyenne : "+moyenne)
+}
+
+
+
+
+
+
+
+
+function FilterByAuthor(authorname){
+
+     let livres=[];
+
+
+     for(let i of bibliotheque){
+        if(i.auteur==authorname){
+            livres.push(i);
+        }
+     }
+
+
+     return livres;
+
+    
+      
+}
+
+
+// Pour si un livre est disponible (titre paramétre  )
+
+
+
+function checkDisponibilité(title){
+
+let counter=0;
+
+let livrecherché={};
+
+      for(let i of  bibliotheque){
+        if(i.titre==title){
+            counter++;
+            livrecherché=i;
+            break;
+        }
+      }
+
+// si on a trouvé le livre 
+if(counter>0){
+ 
+    if(livrecherché.disponible){
+        return "Livre Disponible";
     }else{
-        alert("elimination moyenne :"+moyenne)
+        return "Livre Indisponible";
     }
-
+     
 }else{
-    alert("Unfound Student ")
+
+
+       return "Livre Introuvable ";
+}
+
+
 }
 
 
 
 
 
+//  
 
+
+
+
+let userChoice=prompt("Gestion Bibiliotéque\n1-Lister les livres disponibles\n2-Ajouter Un nouveau Livre\n3-Chercher Par Auteur\n4-Verifier La disponibilité")
+
+
+
+switch(userChoice){
+
+    case "1":{
+        console.log("Les Livres Disponibles : ")
+        console.log(DisplayDisponibleBooks());
+    }
+    break;
+
+    case "2":{
+        let bookTitle=prompt("Veuillez saisir le titre du livre ");
+        let bookAuthor=prompt("Veuillez saisir le nom de l'auteur");
+
+
+        console.log(AddNewBook(bookTitle,bookAuthor));
+        
+
+
+    }
+    break;
+    
+    case "3":{
+
+        let AuthorName=prompt("Veuillez saisir le nom de l'auteur : ");
+        console.log("Les livres de L'auteur : "+AuthorName+" sont ");
+        console.log(FilterByAuthor(AuthorName));
+
+    }
+    break;
+
+    case "4":{
+        let BookTitle=prompt("Veuillez Saisir le titre du livre : ");
+
+        console.log(checkDisponibilité(BookTitle))
+    }
+
+    break;
+
+
+    default:
+        alert("Invalid Option ")
+
+
+
+}
