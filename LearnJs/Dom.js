@@ -40,6 +40,7 @@ let paras=document.getElementsByTagName("meta"); // []
 // let classes=document.getElementsByClassName("cls"); // []
 
 
+// Recommandé
 
 // querySelector (elle applique la selection css)
 
