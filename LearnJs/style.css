@@ -19,3 +19,12 @@
 label,input{
     display: block;
 }
+
+
+
+/* By attribute */
+
+
+input[type="email"]{
+    
+}
