@@ -220,103 +220,197 @@ function TypeName(){
 
 
 
-let spans=document.querySelectorAll("span"); // []
+// let spans=document.querySelectorAll("span"); // []
 
 
-// console.log(spans)
-
-
-
-// Math Functions 
-
-// L'Addition
-
-function Addition(num1,num2){
-    let result=+(num1)+ +(num2)
-    spans[0].innerHTML="L'addition "
-    spans[1].innerHTML=num1;
-    spans[2].innerHTML="+";
-    spans[3].innerHTML=num2;
-    spans[4].innerHTML=result
-
-}
-
-// Soustraction
-function Soustraction(num1,num2){
-    let result=num1-num2
-    spans[0].innerHTML="La Soustraction "
-    spans[1].innerHTML=num1;
-    spans[2].innerHTML="-";
-    spans[3].innerHTML=num2;
-    spans[4].innerHTML=result
-
-}
-// Multiplication
-function Multiplication(num1,num2){
-    let result=num1*num2
-    spans[0].innerHTML="La Multiplication"
-    spans[1].innerHTML=num1;
-    spans[2].innerHTML="x";
-    spans[3].innerHTML=num2;
-    spans[4].innerHTML=result
-
-}
+// // console.log(spans)
 
 
 
-// Multiplication
+// // Math Functions 
+
+// // L'Addition
+
+// function Addition(num1,num2){
+//     let result=+(num1)+ +(num2)
+//     spans[0].innerHTML="L'addition "
+//     spans[1].innerHTML=num1;
+//     spans[2].innerHTML="+";
+//     spans[3].innerHTML=num2;
+//     spans[4].innerHTML=result
+
+// }
+
+// // Soustraction
+// function Soustraction(num1,num2){
+//     let result=num1-num2
+//     spans[0].innerHTML="La Soustraction "
+//     spans[1].innerHTML=num1;
+//     spans[2].innerHTML="-";
+//     spans[3].innerHTML=num2;
+//     spans[4].innerHTML=result
+
+// }
+// // Multiplication
+// function Multiplication(num1,num2){
+//     let result=num1*num2
+//     spans[0].innerHTML="La Multiplication"
+//     spans[1].innerHTML=num1;
+//     spans[2].innerHTML="x";
+//     spans[3].innerHTML=num2;
+//     spans[4].innerHTML=result
+
+// }
 
 
-function Division(num1,num2){
 
-    let h3=document.querySelector("h3");
-    if(num2!=0){
-    let result=num1/num2
-    spans[0].innerHTML="La Division "
-    spans[1].innerHTML=num1;
-    spans[2].innerHTML="/";
-    spans[3].innerHTML=num2;
-    spans[4].innerHTML=result
-    }else{
-          h3.innerHTML="Impossible de diviser par 0 ";
-    }
-
-}
+// // Multiplication
 
 
+// function Division(num1,num2){
 
+//     let h3=document.querySelector("h3");
+//     if(num2!=0){
+//     let result=num1/num2
+//     spans[0].innerHTML="La Division "
+//     spans[1].innerHTML=num1;
+//     spans[2].innerHTML="/";
+//     spans[3].innerHTML=num2;
+//     spans[4].innerHTML=result
+//     }else{
+//           h3.innerHTML="Impossible de diviser par 0 ";
+//     }
 
-
-
-let num1Prompt=prompt("Veuillez saisir le nombre 1 : ")
-let num2Prompt=prompt("Veuillez saisir le nombre 2 : ")
-
-let operationPrompt=prompt("1-Addition\n2-Sous\n3-Multip\n4-Division");
+// }
 
 
 
-switch(operationPrompt){
-    case "1":{
-        Addition(num1Prompt,num2Prompt);
-    }
-    break;
 
-    case "2":{
-        Soustraction(num1Prompt,num2Prompt);
-    }
-    break;
 
-    case "3":{
-        Multiplication(num1Prompt,num2Prompt);
-    }
-    break;
 
-    case "4":{
-        Division(num1Prompt,num2Prompt);
-    }
-    break;
-    default:{
-            let h3=document.querySelector("h3");
-               h3.innerHTML="Opération invalide"
-    }
-}
+// let num1Prompt=prompt("Veuillez saisir le nombre 1 : ")
+// let num2Prompt=prompt("Veuillez saisir le nombre 2 : ")
+
+// let operationPrompt=prompt("1-Addition\n2-Sous\n3-Multip\n4-Division");
+
+
+
+// switch(operationPrompt){
+//     case "1":{
+//         Addition(num1Prompt,num2Prompt);
+//     }
+//     break;
+
+//     case "2":{
+//         Soustraction(num1Prompt,num2Prompt);
+//     }
+//     break;
+
+//     case "3":{
+//         Multiplication(num1Prompt,num2Prompt);
+//     }
+//     break;
+
+//     case "4":{
+//         Division(num1Prompt,num2Prompt);
+//     }
+//     break;
+//     default:{
+//             let h3=document.querySelector("h3");
+//                h3.innerHTML="Opération invalide"
+//     }
+// }
+
+
+
+
+
+
+// Manipulation  des attributs
+
+
+// Lecture des attributs 
+
+// sytanxe => elm.nomdeL'Attribut="Nouvelle valeur" ex : para2.id
+
+
+
+
+
+
+
+// let para2 = document.querySelector("#main-para");
+
+// // Lecture 
+// console.log(para2.title);
+
+
+let input= document.querySelector("input");
+
+
+// console.log(input.type);
+
+
+
+// // Ecriture 
+
+
+// input.type="date"
+
+
+
+
+// document.querySelector("button").onclick=()=>{
+
+
+//   let btn=document.querySelector("button");
+//     if(btn.innerHTML=='<i class="fa-solid fa-eye-slash"></i> Hide Password'){
+//           input.type="password";
+//           btn.innerHTML=" <i class='fa-solid fa-eye'></i> Show Password"
+//     }else{
+
+      
+//         input.type="text";
+//         btn.innerHTML='<i class="fa-solid fa-eye-slash"></i> Hide Password'
+//     }
+
+  
+// }
+
+
+
+
+
+// Selectionner l'image
+
+
+// let img = document.querySelector("img");
+
+
+
+// let button=document.querySelector("button")
+
+
+// button.onclick=()=>{
+//     img.src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg";
+// }
+
+
+
+
+// il faut créer un programme qui va demander par prompt a saisir la source d'une image et automatiquement l'image va s'apparaitre 
+
+
+let image=document.querySelector("img");
+
+function AddImageToHtml(source){
+    image.src=source;
+    alert("Image a eté insére ");
+} 
+
+
+
+let imageSource=prompt("Veuillez saisir la source de l'image: ")
+
+
+AddImageToHtml(imageSource)
