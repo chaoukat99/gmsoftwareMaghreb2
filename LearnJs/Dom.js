@@ -6,7 +6,7 @@
 // css  style with Js 
 
 // classlist Object 
-// Nodes 
+// Dom traversing 
 
 // Create Elements with Js 
 
@@ -410,7 +410,194 @@ function AddImageToHtml(source){
 
 
 
-let imageSource=prompt("Veuillez saisir la source de l'image: ")
+// let imageSource=prompt("Veuillez saisir la source de l'image: ")
 
 
-AddImageToHtml(imageSource)
+// AddImageToHtml(imageSource)
+
+
+
+
+// Css Styling with Js
+
+
+
+let myTitle=document.querySelector(".cls");
+
+
+
+
+// console.log(myTitle);
+
+
+// 1ere Method Syntax : element.style.cssProperty=value()
+
+// myTitle.style.backgroundColor="black";
+// myTitle.style.color="white";
+// myTitle.style.padding="10px";
+// myTitle.style.textAlign="center";
+// myTitle.style.fontFamily="cursive";
+// myTitle.style.border="solid 2px red"
+// myTitle.style.borderRadius="10px"
+
+
+
+let customAlert=document.querySelector(".clss");
+
+
+
+// Le style css 
+
+// customAlert.style.width="200px";
+// customAlert.style.height="60px";
+// customAlert.style.backgroundColor="#eee";
+// customAlert.style.padding="10px";
+// customAlert.style.borderLeft="6px solid green";
+// customAlert.style.borderRadius="5px";
+// customAlert.style.display="flex";
+// customAlert.style.justifyContent="center";
+// customAlert.style.alignItems="center";
+// customAlert.style.fontFamily="cursive";
+// customAlert.style.fontWeight="bold";
+
+
+
+
+
+
+// 2eme Method cssText syntax: element.style.cssText="color:red;background-color:white"
+
+
+
+// customAlert.style.cssText="color:red;background-color:#eee;padding:10px;border-radius:10px"
+
+
+
+
+
+let Switch=document.querySelector("input[type='checkbox']");
+
+// let body=document.querySelector("body");
+
+// console.log(Switch.required) // Boolean 
+
+// Switch.onclick=()=>{
+//     if(!Switch.checked){
+//           document.body.style.background="white";
+//           document.body.style.color="red";
+//     }else{
+//         // document.body.style.background="rgb(40, 38, 38)";
+//         // document.body.style.transition="0.4s";
+//          document.body.style.cssText="background-color:rgb(40, 38, 38);color:white;transition:0.4s"  
+//     }
+// }
+
+
+
+
+
+// ClassList (add remove toggle contains)
+
+
+
+// contains 
+
+
+
+let h1Title=document.querySelector("h1");
+
+
+console.log(h1Title.classList.contains("cls")) // contains  il va verifier si le h1 contient une classe nommé cls ou non 
+
+
+
+
+// add (ajouter auto une classe html a un élement )
+
+
+// h1Title.classList.add("active","cls","cls2","bg")
+
+
+
+let btns=document.querySelectorAll("button");
+
+
+
+
+// btns[2].onclick=()=>{
+
+//     // h1Title.classList.add("masquer");
+//     let div= document.querySelector("div") ;
+
+//     div.classList.add("clss")
+// }    
+
+
+// btns[1].onclick=()=>{
+//     h1Title.classList.add("afficher")
+// }
+
+
+
+
+// remove (elle supprime auto une classe a partir d'un element html )
+
+
+
+// btns[0].onclick=()=>{
+
+//     h1Title.classList.add("masquer");
+
+// }    
+
+
+// btns[1].onclick=()=>{
+//     h1Title.classList.remove("masquer")
+// }
+
+
+// Toggle 
+
+// S'il trouve la classe sur l'element elle va la supprimer sinon elle va l'ajouter
+
+
+
+btns[2].onclick=()=>{
+
+
+    h1Title.classList.toggle("masquer") 
+
+    // 
+}
+
+
+// IL fault creér une page Html qui va demander a l'utilisateur de saisir le nom complet et l'age 
+
+
+
+// il faut afficher en titre h1 le message Bienvenue Samir (rouge vert en jaune )
+
+
+
+//  la couleur du nom complet sra colorisé en se basant sur l'age 
+
+
+// age >18 (vert)
+
+
+// age <14 (rouge )
+
+
+
+// age entre 18 et 14 (jaune )
+
+
+
+
+// Concept a utilsé : 
+
+// innerHtml 
+// ClassList / css with Js 
+// if 
+
+// prompt 

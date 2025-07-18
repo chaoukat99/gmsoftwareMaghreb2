@@ -26,5 +26,41 @@ label,input{
 
 
 input[type="email"]{
-    
+    color: rgb(40, 38, 38);
+}
+
+
+
+.clss{
+
+   width: 200px;
+   height: 60px;
+   background-color: #eee;
+   padding: 10px;
+   border-left: 6px solid red;
+   border-radius: 5px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: cursive;
+   font-weight: bold;
+
+}
+
+
+
+
+
+.active{
+    color: red;
+}
+
+
+.masquer{
+    display: none;
+}
+
+.afficher{
+    display: block;
 }
