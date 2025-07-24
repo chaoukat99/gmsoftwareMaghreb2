@@ -1,0 +1,13 @@
+Dom Traversing :
+
+
+-element.children :(Recupere un tableau d'enfant de l'element selectionné(element)
+
+-element.parentNode:(Recupere le parent de l'element par ex : 
+
+body.parentNode=> <html>
+
+
+-element.nextElementSibling:recupere le frere de l'element qui se trouve après 
+
+-element.PreviousElementSibling:recupere le frere de l'element qui se trouve avant 

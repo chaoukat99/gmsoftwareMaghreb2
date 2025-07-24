@@ -1,0 +1,51 @@
+Seance 18/07/2025:
+
+
+PART I : control css with Js
+
+
+
+2 method : 
+
+- element.style.property="value"
+
+ex: h1.style.color="red";
+
+
+-element.style.cssText="color:red;backgrond-color:white"
+ex : h1.style.cssText="color:red;"
+
+
+PART II : CLassList 
+
+
+-contains check if a tag contain a class or not 
+
+ex : h1.classList.contains("cls") // true or false 
+
+
+-add add class into a tag 
+
+ex: h1.classList.add("cls")
+
+-remove a class from a tag 
+
+ex: h1.classList.remove("cls")
+
+-Toggle ( add or remove  a class from a tag )
+
+ex: h1.classList.toggle("cls")
+
+
+
+
+
+
+
+
+
+
+
+
+
+

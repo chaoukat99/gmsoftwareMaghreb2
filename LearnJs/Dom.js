@@ -1,16 +1,16 @@
 // Sélécteurs
-// Html Tag content 
+// Html Tag content  innerHTML
 
-// attributes Manipulation
+// attributes Manipulation 
 
 // css  style with Js 
 
 // classlist Object 
 // Dom traversing 
 
-// Create Elements with Js 
+// Create HTML Elements with Js and (append and remove )
 
-// Javascript Events
+// Javascript Events (click scrolling )
 
 
 
@@ -507,7 +507,7 @@ let Switch=document.querySelector("input[type='checkbox']");
 let h1Title=document.querySelector("h1");
 
 
-console.log(h1Title.classList.contains("cls")) // contains  il va verifier si le h1 contient une classe nommé cls ou non 
+// console.log(h1Title.classList.contains("cls")) // contains  il va verifier si le h1 contient une classe nommé cls ou non 
 
 
 
@@ -562,13 +562,13 @@ let btns=document.querySelectorAll("button");
 
 
 
-btns[2].onclick=()=>{
+// btns[2].onclick=()=>{
 
 
-    h1Title.classList.toggle("masquer") 
+//     h1Title.classList.toggle("masquer") 
 
-    // 
-}
+//     // 
+// }
 
 
 // IL fault creér une page Html qui va demander a l'utilisateur de saisir le nom complet et l'age 
@@ -579,7 +579,7 @@ btns[2].onclick=()=>{
 
 
 
-//  la couleur du nom complet sra colorisé en se basant sur l'age 
+//  la couleur du nom complet sera colorisé en se basant sur l'age 
 
 
 // age >18 (vert)
@@ -601,3 +601,287 @@ btns[2].onclick=()=>{
 // if 
 
 // prompt 
+
+
+
+
+
+
+// DOM NODES & Traversing 
+
+// let madiv=document.querySelector(".wrapper");
+
+// // Children
+// console.log(madiv.children); // affiche une liste des enfants de l'élement selectionné
+
+
+// let p = document.querySelector("p")
+
+// let collectionOfChildren=madiv.children // []
+
+
+// for(let i of collectionOfChildren){
+//     i.style.color="red";
+// }
+
+
+
+// let ListItems=collectionOfChildren[2]; // recuperer le ul 
+
+// console.log(ListItems.children)
+// for(let i of ListItems.children){
+//     i.style.color="red";
+// }
+
+
+
+
+
+
+para = document.querySelector("p");
+
+
+
+// console.log(para.children)
+
+// ParentNode // retourne le parent d'un element html 
+
+
+
+
+
+
+
+// console.log(para.parentNode)
+
+
+// let thirdListItem=document.querySelectorAll("ul li")[2];
+
+
+// console.log(thirdListItem.parentNode);
+
+
+
+
+
+
+// console.log(para.previousElementSibling) //  il va recupere le frere qui se trouve avant 
+
+
+// console.log(para.nextElementSibling.nextElementSibling) //  il va recupere le frere qui se trouve aprés
+
+
+
+
+
+// append remove 
+
+
+
+// 1- Recuper les fils de ul 
+
+
+// 2- Récuperer le parent du button 
+
+
+// 3- D'aprés le h2 sur la section about il faut selectionner  le lien Contact   
+
+
+// 1- 
+let listItemss=document.querySelector("ul")
+
+
+// console.log(listItemss.children)
+
+
+// 2-
+
+let button=document.querySelector("button");
+
+
+
+// console.log(button.parentNode)
+
+
+
+// 3- 
+
+
+
+// const h2= document.querySelector("h2");
+
+
+
+// console.log(h2)
+
+
+
+// Append et remove 
+
+
+// Append (c'est une methode qui insere des element HTML a l'interieur d'un element )
+
+// Syntaxe : elementParent.append(elementchild)
+
+// let list=document.querySelector("ul");
+
+// let new_Item="<li>Css</li>"
+
+
+// const text="This is a text generated from Js"
+// list.append(new_Item)
+// ajouter new_Item sur la liste
+
+// console.log(list);
+
+
+
+
+
+// let div = document.querySelector(".alert");
+
+
+// ajouter le text a l'element (append)
+
+
+// div.append(text)
+
+
+// Remove 
+
+
+// Syntax : element.remove() // il va supprimer l'element selectionner
+
+
+// let span3=document.querySelector("span")
+
+
+// span3.onclick=()=>{
+//     span3.parentNode.remove();
+// }
+
+
+
+// Create HTML  ELEMENT  with Js
+
+
+
+// exemple paragraphe
+
+
+// let paraa=document.createElement("p");
+
+// append pour insérer un text a l'intérieur du paragraphe
+
+
+// paraa.append("this is a Js  para ")
+
+// paraa.style.color="red";
+// paraa.style.textAlign="center";
+
+
+
+// Ajouter le paragraphe au niveau du body 
+
+
+// document.body.append(paraa)
+
+
+// console.log(paraa)
+
+
+
+
+
+// <div class='alert'>
+//    <span>X</span>
+//    this is alert Message   
+
+// </div>
+
+
+// Creer les element de base 
+
+
+let my_div=document.createElement("div");
+
+let my_span= document.createElement("span");
+
+
+// Ajouter le carctére x pour la span 
+my_span.append("x");
+
+// Ajouter la classe alert pour la div 
+
+my_div.classList.add("alert");
+
+// Ajouter la span a l'interieur de la div (append)
+my_div.append(my_span)
+
+
+
+// ON a ajouter un texte a l'interieur de la div(append ) aprés la span
+my_div.append("this is alert Message")
+
+
+
+
+// Ajouter la div a l'interieur du body 
+
+
+
+// 
+
+
+function AddingDynamicList(){
+
+    // 1- Création d'elements HTML
+const ul = document.createElement("ul");
+
+const list1=document.createElement("li");
+const list2=document.createElement("li");
+const list3=document.createElement("li");
+const list4=document.createElement("li");
+
+
+
+// Ajouter la classe list-parent a ul 
+
+// 2-Ajouter les classes (classList.add)
+ul.classList.add("list-parent");
+
+
+list1.classList.add("items")
+list2.classList.add("items")
+list3.classList.add("items")
+list4.classList.add("items")
+
+// 3-Inserer le contenu textuel des li (append)
+
+list1.append("Home")
+list2.append("About")
+list3.append("Contact")
+list4.append("blog")
+
+
+
+
+// 4-Ajouter les li sur le ul (append)
+ul.append(list1)
+ul.append(list2)
+ul.append(list3)
+ul.append(list4)
+
+
+// 5-Insérer la liste (ul ) au niveu du body (append)
+document.body.append(ul)
+
+}
+
+
+
+
+
+
+
+AddingDynamicList()
