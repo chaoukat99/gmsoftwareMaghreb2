@@ -192,9 +192,9 @@ let box=document.querySelector(".box");
 
 let p=document.querySelector("p");
 
-p.onselectstart=()=>{
-    console.log("selection du texte")
-}
+// p.onselectstart=()=>{
+//     console.log("selection du texte")
+// }
 
 
 
@@ -206,7 +206,7 @@ window.oncontextmenu=()=>{
 
 const date=new Date();
 
-console.log(date.toLocaleTimeString())
+// console.log(date.toLocaleTimeString())
 
 
 
@@ -240,3 +240,47 @@ window.onscroll=()=>{
 
 
 
+// bloquer un evenements 
+
+
+
+// let link=document.querySelector("a");
+
+// // bloquer les evenements (désactiver)
+
+// link.onclick=(ev)=>{
+
+//     ev.preventDefault();
+//    console.log("hello")
+// }
+
+
+
+
+
+let para2=document.querySelector("p");
+
+// para2.onselectstart=(ev)=>{
+//      ev.preventDefault(); // elle bloque l'evenement 
+// }
+
+
+
+// window.oncontextmenu=(ev)=>{
+
+
+//     ev.preventDefault();
+// }
+
+
+
+// let form = document.querySelector("form");
+
+
+// form.onsubmit=(ev)=>{
+
+
+//     ev.preventDefault(); // il bloque le submit (envoie auto des données)
+
+//     console.log("form bloqué ")
+// }
