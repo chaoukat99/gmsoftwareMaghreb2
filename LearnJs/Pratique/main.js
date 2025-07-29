@@ -10,22 +10,22 @@
 
 // Selectionner les élements 
 
-let label=document.querySelector("label");
-let checkbox= document.querySelector("input[type='checkbox']")
+// let label=document .querySelector("label");
+// let checkbox= document.querySelector("input[type='checkbox']")
 
-function SwitchMode(){
+// function SwitchMode(){
    
-        if(checkbox.checked){
-            // to dark 
-            document.body.classList.add("darkmode")
-            label.innerHTML="To Light"
-        }else{
-            document.body.classList.add("lightmode")
-            label.innerHTML="To Dark"
+//         if(checkbox.checked){
+//             // to dark 
+//             document.body.classList.add("darkmode")
+//             label.innerHTML="To Light"
+//         }else{
+//             document.body.classList.add("lightmode")
+//             label.innerHTML="To Dark"
 
-        }
+//         }
     
-}
+// }
 
 
 
@@ -98,64 +98,129 @@ function SwitchMode(){
 
 // on blur de chaque input il faut afficher sur la span qui se trouve aprés input :
 
-// username valide (vert ) or username invalide (rouge)
-let inputs=document.querySelectorAll("input"); // []
-let spans=document.querySelectorAll("span"); // []
+// // username valide (vert ) or username invalide (rouge)
+// let inputs=document.querySelectorAll("input"); // []
+// let spans=document.querySelectorAll("span"); // []
 
-inputs[0].onblur=()=>{
-    if(inputs[0].value.length>=8 && inputs[0].value.length<=15  ){
-        spans[0].innerHTML="Username Valide"
-         spans[0].classList.remove("invalid")
-        spans[0].classList.add("valid")
-    }else{
-         spans[0].innerHTML="Username InValide"
-        spans[0].classList.add("invalid")
-    }
-}
+// inputs[0].onblur=()=>{
+//     if(inputs[0].value.length>=8 && inputs[0].value.length<=15  ){
+//         spans[0].innerHTML="Username Valide"
+//          spans[0].classList.remove("invalid")
+//         spans[0].classList.add("valid")
+//     }else{
+//          spans[0].innerHTML="Username InValide"
+//         spans[0].classList.add("invalid")
+//     }
+// }
 
 
 
 // age validation 
 
 
-inputs[1].onblur=()=>{
-    if(inputs[1].value>18 ){
-        spans[1].innerHTML="Age Valide"
-         spans[1].classList.remove("invalid")
-        spans[1].classList.add("valid")
-    }else{
-         spans[1].innerHTML="Age InValide"
-        spans[1].classList.add("invalid")
-    }
-}
+// inputs[1].onblur=()=>{
+//     if(inputs[1].value>18 ){
+//         spans[1].innerHTML="Age Valide"
+//          spans[1].classList.remove("invalid")
+//         spans[1].classList.add("valid")
+//     }else{
+//          spans[1].innerHTML="Age InValide"
+//         spans[1].classList.add("invalid")
+//     }
+// }
 
 
 // email validation 
 
 
-inputs[2].onblur=()=>{
-    if(inputs[2].value.includes(inputs[0].value) && inputs[2].value.includes("@") ){
-        spans[2].innerHTML="Email Valide"
-         spans[2].classList.remove("invalid")
-        spans[2].classList.add("valid")
-    }else{
-         spans[2].innerHTML="Email InValide"
-        spans[2].classList.add("invalid")
-    }
-}
+// inputs[2].onblur=()=>{
+//     if(inputs[2].value.includes(inputs[0].value) && inputs[2].value.includes("@") ){
+//         spans[2].innerHTML="Email Valide"
+//          spans[2].classList.remove("invalid")
+//         spans[2].classList.add("valid")
+//     }else{
+//          spans[2].innerHTML="Email InValide"
+//         spans[2].classList.add("invalid")
+//     }
+// }
 
 
 
 // Mobile Validation 
 
 
-inputs[3].onblur=()=>{
-    if(inputs[3].value.startsWith("+212") || inputs[3].value.startsWith("+213") || inputs[3].value.startsWith("+216")  ){
-        spans[3].innerHTML="Mobile Valide"
-         spans[3].classList.remove("invalid")
-        spans[3].classList.add("valid")
-    }else{
-         spans[3].innerHTML="Mobile InValide"
-        spans[3].classList.add("invalid")
-    }
+// inputs[3].onblur=()=>{
+//     if(inputs[3].value.startsWith("+212") || inputs[3].value.startsWith("+213") || inputs[3].value.startsWith("+216")  ){
+//         spans[3].innerHTML="Mobile Valide"
+//          spans[3].classList.remove("invalid")
+//         spans[3].classList.add("valid")
+//     }else{
+//          spans[3].innerHTML="Mobile InValide"
+//         spans[3].classList.add("invalid")
+//     }
+// }
+
+
+
+
+
+// SweetAlerts
+
+
+
+
+let btn = document.querySelector("#alert");
+
+
+// click
+
+// 1000ms => 1s
+
+btn.onclick=()=>{
+
+    // Swal.fire({
+    //  title: "Good Job ",
+    //  text: "You win the Game ",
+    //  icon: "error",
+    //  showConfirmButton:false,
+    //  timer:5000
+    // });
+
+AlertWithImage();
+
+
+
+}
+
+
+
+
+function AlertWithImage(){
+
+  
+Swal.fire({
+    title:"Mosquée Hassan 2",
+  imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_X3UfG4GxsGitlk5GLQR6v_6R7IkEye-jw&s",
+  imageHeight: 300,
+  imageAlt: "A tall image",
+ 
+  showConfirmButton:true,
+  html:"<span class='closebtn'>x</span>"
+
+});
+
+
+
+// let madiv=document.querySelector(".swal2-modal");
+
+// console.log(madiv)
+
+
+// let closeCustom=document.querySelector(".closebtn")
+
+// closeCustom.onclick=()=>{
+//     madiv.parentNode.remove();
+// }
+
+
 }
