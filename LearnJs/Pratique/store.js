@@ -135,7 +135,7 @@ Mtbtn.onclick=()=>{
 
    }else{
                Swal.fire({
-                title: `Nothing To Orderrd ` ,
+                title: `Nothing To Order ` ,
                 text: "Try Later",
                 icon: "error"
                 });
