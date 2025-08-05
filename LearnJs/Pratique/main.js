@@ -1,226 +1,249 @@
 
 
 
-// Dark Mode scénario : 
+// // Dark Mode scénario : 
 
 
-// on click on to dark text or checkbox  , on a besoin de changer l'arriére plan en noire et meme les textes en blanc 
+// // on click on to dark text or checkbox  , on a besoin de changer l'arriére plan en noire et meme les textes en blanc 
 
 
 
-// Selectionner les élements 
+// // Selectionner les élements 
 
-// let label=document .querySelector("label");
-// let checkbox= document.querySelector("input[type='checkbox']")
+// // let label=document .querySelector("label");
+// // let checkbox= document.querySelector("input[type='checkbox']")
 
-// function SwitchMode(){
+// // function SwitchMode(){
    
-//         if(checkbox.checked){
-//             // to dark 
-//             document.body.classList.add("darkmode")
-//             label.innerHTML="To Light"
-//         }else{
-//             document.body.classList.add("lightmode")
-//             label.innerHTML="To Dark"
+// //         if(checkbox.checked){
+// //             // to dark 
+// //             document.body.classList.add("darkmode")
+// //             label.innerHTML="To Light"
+// //         }else{
+// //             document.body.classList.add("lightmode")
+// //             label.innerHTML="To Dark"
 
-//         }
+// //         }
     
-// }
+// // }
 
 
 
-// checkbox.onclick=()=>{
-//     SwitchMode();
-// }
-// checked (true false)
+// // checkbox.onclick=()=>{
+// //     SwitchMode();
+// // }
+// // checked (true false)
 
 
 
-// si le mot de passe est entre 10 et 20 (valide ) sinon c'est invalide 
+// // si le mot de passe est entre 10 et 20 (valide ) sinon c'est invalide 
 
 
-// input (saisie)
+// // input (saisie)
 
-// let input=document.querySelector("input");
+// // let input=document.querySelector("input");
 
-// let btn=input.nextElementSibling.nextElementSibling
-
-
-
+// // let btn=input.nextElementSibling.nextElementSibling
 
 
 
-// function VerifyPassword(){
+
+
+
+// // function VerifyPassword(){
      
 
-//     input.oninput=()=>{
+// //     input.oninput=()=>{
 
-//         if(input.value.length>=10 && input.value.length<=20 ){
-//             btn.disabled=false; // activer le button (remove disabled attribute)
-//             btn.classList.remove("disable")
-//             btn.classList.add("enable") // ajouter la classe de validation (green)
-//         }else{
-//             btn.disabled=true; // desactiver le button (add disabled attribute)
+// //         if(input.value.length>=10 && input.value.length<=20 ){
+// //             btn.disabled=false; // activer le button (remove disabled attribute)
+// //             btn.classList.remove("disable")
+// //             btn.classList.add("enable") // ajouter la classe de validation (green)
+// //         }else{
+// //             btn.disabled=true; // desactiver le button (add disabled attribute)
               
-//             btn.classList.add("disable") // ajouter la classe de validation (red)
-//         }
-//     }
+// //             btn.classList.add("disable") // ajouter la classe de validation (red)
+// //         }
+// //     }
+// // }
+
+
+// // call function 
+
+// //  VerifyPassword();
+
+
+
+
+// //  btn.onclick=()=>{
+// //     alert("hello")
+// //  }
+
+
+
+
+
+
+
+
+// // username doit etre entre 8 et 15 carctéres   
+
+// // age >18 
+
+// // doit contenir username et le carctére @  
+
+
+// // mobile doit commencer  avec (+212 | +213 | +216)
+
+
+// // on blur de chaque input il faut afficher sur la span qui se trouve aprés input :
+
+// // // username valide (vert ) or username invalide (rouge)
+// // let inputs=document.querySelectorAll("input"); // []
+// // let spans=document.querySelectorAll("span"); // []
+
+// // inputs[0].onblur=()=>{
+// //     if(inputs[0].value.length>=8 && inputs[0].value.length<=15  ){
+// //         spans[0].innerHTML="Username Valide"
+// //          spans[0].classList.remove("invalid")
+// //         spans[0].classList.add("valid")
+// //     }else{
+// //          spans[0].innerHTML="Username InValide"
+// //         spans[0].classList.add("invalid")
+// //     }
+// // }
+
+
+
+// // age validation 
+
+
+// // inputs[1].onblur=()=>{
+// //     if(inputs[1].value>18 ){
+// //         spans[1].innerHTML="Age Valide"
+// //          spans[1].classList.remove("invalid")
+// //         spans[1].classList.add("valid")
+// //     }else{
+// //          spans[1].innerHTML="Age InValide"
+// //         spans[1].classList.add("invalid")
+// //     }
+// // }
+
+
+// // email validation 
+
+
+// // inputs[2].onblur=()=>{
+// //     if(inputs[2].value.includes(inputs[0].value) && inputs[2].value.includes("@") ){
+// //         spans[2].innerHTML="Email Valide"
+// //          spans[2].classList.remove("invalid")
+// //         spans[2].classList.add("valid")
+// //     }else{
+// //          spans[2].innerHTML="Email InValide"
+// //         spans[2].classList.add("invalid")
+// //     }
+// // }
+
+
+
+// // Mobile Validation 
+
+
+// // inputs[3].onblur=()=>{
+// //     if(inputs[3].value.startsWith("+212") || inputs[3].value.startsWith("+213") || inputs[3].value.startsWith("+216")  ){
+// //         spans[3].innerHTML="Mobile Valide"
+// //          spans[3].classList.remove("invalid")
+// //         spans[3].classList.add("valid")
+// //     }else{
+// //          spans[3].innerHTML="Mobile InValide"
+// //         spans[3].classList.add("invalid")
+// //     }
+// // }
+
+
+
+
+
+// // SweetAlerts
+
+
+
+
+// let btn = document.querySelector("#alert");
+
+
+// // click
+
+// // 1000ms => 1s
+
+// btn.onclick=()=>{
+
+//     // Swal.fire({
+//     //  title: "Good Job ",
+//     //  text: "You win the Game ",
+//     //  icon: "error",
+//     //  showConfirmButton:false,
+//     //  timer:5000
+//     // });
+
+// AlertWithImage();
+
+
+
 // }
 
 
-// call function 
-
-//  VerifyPassword();
 
 
-
-
-//  btn.onclick=()=>{
-//     alert("hello")
-//  }
-
-
-
-
-
-
-
-
-// username doit etre entre 8 et 15 carctéres   
-
-// age >18 
-
-// doit contenir username et le carctére @  
-
-
-// mobile doit commencer  avec (+212 | +213 | +216)
-
-
-// on blur de chaque input il faut afficher sur la span qui se trouve aprés input :
-
-// // username valide (vert ) or username invalide (rouge)
-// let inputs=document.querySelectorAll("input"); // []
-// let spans=document.querySelectorAll("span"); // []
-
-// inputs[0].onblur=()=>{
-//     if(inputs[0].value.length>=8 && inputs[0].value.length<=15  ){
-//         spans[0].innerHTML="Username Valide"
-//          spans[0].classList.remove("invalid")
-//         spans[0].classList.add("valid")
-//     }else{
-//          spans[0].innerHTML="Username InValide"
-//         spans[0].classList.add("invalid")
-//     }
-// }
-
-
-
-// age validation 
-
-
-// inputs[1].onblur=()=>{
-//     if(inputs[1].value>18 ){
-//         spans[1].innerHTML="Age Valide"
-//          spans[1].classList.remove("invalid")
-//         spans[1].classList.add("valid")
-//     }else{
-//          spans[1].innerHTML="Age InValide"
-//         spans[1].classList.add("invalid")
-//     }
-// }
-
-
-// email validation 
-
-
-// inputs[2].onblur=()=>{
-//     if(inputs[2].value.includes(inputs[0].value) && inputs[2].value.includes("@") ){
-//         spans[2].innerHTML="Email Valide"
-//          spans[2].classList.remove("invalid")
-//         spans[2].classList.add("valid")
-//     }else{
-//          spans[2].innerHTML="Email InValide"
-//         spans[2].classList.add("invalid")
-//     }
-// }
-
-
-
-// Mobile Validation 
-
-
-// inputs[3].onblur=()=>{
-//     if(inputs[3].value.startsWith("+212") || inputs[3].value.startsWith("+213") || inputs[3].value.startsWith("+216")  ){
-//         spans[3].innerHTML="Mobile Valide"
-//          spans[3].classList.remove("invalid")
-//         spans[3].classList.add("valid")
-//     }else{
-//          spans[3].innerHTML="Mobile InValide"
-//         spans[3].classList.add("invalid")
-//     }
-// }
-
-
-
-
-
-// SweetAlerts
-
-
-
-
-let btn = document.querySelector("#alert");
-
-
-// click
-
-// 1000ms => 1s
-
-btn.onclick=()=>{
-
-    // Swal.fire({
-    //  title: "Good Job ",
-    //  text: "You win the Game ",
-    //  icon: "error",
-    //  showConfirmButton:false,
-    //  timer:5000
-    // });
-
-AlertWithImage();
-
-
-
-}
-
-
-
-
-function AlertWithImage(){
+// function AlertWithImage(){
 
   
-Swal.fire({
-    title:"Mosquée Hassan 2",
-  imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_X3UfG4GxsGitlk5GLQR6v_6R7IkEye-jw&s",
-  imageHeight: 300,
-  imageAlt: "A tall image",
+// Swal.fire({
+//     title:"Mosquée Hassan 2",
+//   imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_X3UfG4GxsGitlk5GLQR6v_6R7IkEye-jw&s",
+//   imageHeight: 300,
+//   imageAlt: "A tall image",
  
-  showConfirmButton:true,
-  html:"<span class='closebtn'>x</span>"
+//   showConfirmButton:true,
+//   html:"<span class='closebtn'>x</span>"
 
-});
-
-
-
-// let madiv=document.querySelector(".swal2-modal");
-
-// console.log(madiv)
+// });
 
 
-// let closeCustom=document.querySelector(".closebtn")
 
-// closeCustom.onclick=()=>{
-//     madiv.parentNode.remove();
+// // let madiv=document.querySelector(".swal2-modal");
+
+// // console.log(madiv)
+
+
+// // let closeCustom=document.querySelector(".closebtn")
+
+// // closeCustom.onclick=()=>{
+// //     madiv.parentNode.remove();
+// // }
+
+
 // }
 
 
-}
+// // function  playAudio(){
+// // let audio = new Audio();
+
+// // // source de l'audio
+
+// // audio.src="../audios/my_audio.wav";
+
+
+// // audio.play();
+// // }
+
+
+
+
+// let btn2=document.querySelectorAll("button")[1];
+
+
+
+// btn2.onclick=()=>{
+//   playAudio();
+// }
