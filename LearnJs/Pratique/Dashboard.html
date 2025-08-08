@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <h1>Welcome <span style="color: rgb(33, 181, 33);"></span> </h1>
+
+
+
+
+    <script>
+        let userDetails=JSON.parse(localStorage.getItem("user_connected"));
+        document.querySelector("span").innerHTML=userDetails.nom
+    </script>
+</body>
+</html>
